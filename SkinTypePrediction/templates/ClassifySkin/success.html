@@ -1,0 +1,65 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SkinTypePrediction</title>
+  <link rel = "stylesheet" href="{%static "CSS/style.css"%}">
+  <style>
+    .btn1{
+    	font-size: 18px;
+    	text-decoration: none;
+    	padding: 15px 20px;
+    	border:  1px solid #ffffff40;
+      background-color:white;
+    }
+    .btn1:hover{
+    	background-color: #ffffff40;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+
+
+<main class="wrapper">
+  <header>
+    <div class="header-inner">
+      <div></div>
+      <div class="menu">
+        <ul>
+          <li><a class="btn" href="/plots">See Plots</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+<section class="home common">
+	<div class="shape">
+		<img class="shape1" src="{%static "images/shape1.svg"%}" alt="">
+		<img class="shape2" src="{%static "images/shape1.svg"%}" alt="">
+		<img class="shape3" src="{%static "images/shape1.svg"%}" alt="">
+		<img class="shape4" src="{%static "images/shape1.svg"%}" alt="">
+		<img class="shape5" src="{%static "images/shape1.svg"%}" alt="">
+	</div>
+
+	<div class="home-inner">
+		<div class="text">
+			<h5>Unscript 2022</h5>
+			<h1>NASA</h1>
+			<p>
+        Your skin is {{result}}
+        <a href="/" class="btn1">Test Another</a>
+      </p>
+		</div>
+		<div class="img">
+			<img src="{%static "images/img3.png"%}" alt="">
+		</div>
+	</div>
+
+</section>
+</main>
+
+</body>
+</html>
